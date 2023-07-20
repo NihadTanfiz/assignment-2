@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem ;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 15px whitesmoke;
+}
+.header-bio{
+    float:left;
+    padding:25px;
+    font-family: "Sofia", sans-serif;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 939px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(img/pic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    z-index:  -1;
+    opacity: .8;
+}
+
+.btn{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background: black;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #ae8600;
+    color: #000000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 10px;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 100px;
+    margin-bottom: 00px;
+    font-family: "Sofia", sans-serif;
+}
+.highlight-word-colour{
+    color: green;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify ;
+    padding: 20px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#nextstep{
+    display: flex;
+    flex-direction: column;
+    padding: 00px;
+    background-color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 500px;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top, lightblue 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    font-family: "Sofia", sans-serif;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px lightblue;
+}
+.box img{
+    width: 500px;
+    height: 300px;
+}
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+
+
+footer {
+    color: #76b3f5;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding: 100px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    list-style-type: none;
+    font-size: 40px;
+    
+}
+.social li{
+    display: inline-block;
+    padding: 0 20px;    
+}
